@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MyTools.h"
 
 @interface ViewController ()
 
@@ -16,14 +17,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+   
+    MyTools *tools = [[MyTools alloc]init];
+    MyTools *toolObj = [[MyTools alloc]init];
+    
+    NSLog(@"000----%@",tools);
+    NSLog(@"000----%@",toolObj);
+    
+    for (int i = 0; i<10; i++) {
+        MyTools *obj = [MyTools sharedTools];
+        NSLog(@"%d%d%d----%@",i,i,i,obj);
+    }
 }
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 
 @end

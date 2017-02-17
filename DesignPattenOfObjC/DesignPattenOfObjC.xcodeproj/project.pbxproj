@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF04093D1E569FF1008BE838 /* MyTools.m in Sources */ = {isa = PBXBuildFile; fileRef = DF04093C1E569FF1008BE838 /* MyTools.m */; };
 		DFAD2AEE1E569C5F00044692 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DFAD2AED1E569C5F00044692 /* main.m */; };
 		DFAD2AF11E569C5F00044692 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFAD2AF01E569C5F00044692 /* AppDelegate.m */; };
 		DFAD2AF41E569C5F00044692 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFAD2AF31E569C5F00044692 /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DF04093B1E569FF1008BE838 /* MyTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyTools.h; path = Singleton/MyTools.h; sourceTree = "<group>"; };
+		DF04093C1E569FF1008BE838 /* MyTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyTools.m; path = Singleton/MyTools.m; sourceTree = "<group>"; };
 		DFAD2AE91E569C5F00044692 /* DesignPattenOfObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPattenOfObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFAD2AED1E569C5F00044692 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DFAD2AEF1E569C5F00044692 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,6 +81,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF04093A1E569FD9008BE838 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				DF04093B1E569FF1008BE838 /* MyTools.h */,
+				DF04093C1E569FF1008BE838 /* MyTools.m */,
+			);
+			name = Singleton;
+			sourceTree = "<group>";
+		};
 		DFAD2AE01E569C5F00044692 = {
 			isa = PBXGroup;
 			children = (
@@ -101,14 +113,11 @@
 		DFAD2AEB1E569C5F00044692 /* DesignPattenOfObjC */ = {
 			isa = PBXGroup;
 			children = (
+				DF04093A1E569FD9008BE838 /* Singleton */,
 				DFAD2AEF1E569C5F00044692 /* AppDelegate.h */,
 				DFAD2AF01E569C5F00044692 /* AppDelegate.m */,
 				DFAD2AF21E569C5F00044692 /* ViewController.h */,
 				DFAD2AF31E569C5F00044692 /* ViewController.m */,
-				DFAD2AF51E569C5F00044692 /* Main.storyboard */,
-				DFAD2AF81E569C5F00044692 /* Assets.xcassets */,
-				DFAD2AFA1E569C5F00044692 /* LaunchScreen.storyboard */,
-				DFAD2AFD1E569C5F00044692 /* Info.plist */,
 				DFAD2AEC1E569C5F00044692 /* Supporting Files */,
 			);
 			path = DesignPattenOfObjC;
@@ -117,6 +126,10 @@
 		DFAD2AEC1E569C5F00044692 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DFAD2AF51E569C5F00044692 /* Main.storyboard */,
+				DFAD2AF81E569C5F00044692 /* Assets.xcassets */,
+				DFAD2AFA1E569C5F00044692 /* LaunchScreen.storyboard */,
+				DFAD2AFD1E569C5F00044692 /* Info.plist */,
 				DFAD2AED1E569C5F00044692 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -276,6 +289,7 @@
 				DFAD2AF41E569C5F00044692 /* ViewController.m in Sources */,
 				DFAD2AF11E569C5F00044692 /* AppDelegate.m in Sources */,
 				DFAD2AEE1E569C5F00044692 /* main.m in Sources */,
+				DF04093D1E569FF1008BE838 /* MyTools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +519,7 @@
 				DFAD2B181E569C5F00044692 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DFAD2B191E569C5F00044692 /* Build configuration list for PBXNativeTarget "DesignPattenOfObjCTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +528,7 @@
 				DFAD2B1B1E569C5F00044692 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DFAD2B1C1E569C5F00044692 /* Build configuration list for PBXNativeTarget "DesignPattenOfObjCUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +537,7 @@
 				DFAD2B1E1E569C5F00044692 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
